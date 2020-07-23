@@ -1,0 +1,10 @@
+{
+  "serve": ".",
+  "port": 9090,
+  "bind": "localhost",
+  "watchexps": [
+    "src/*.pug # npm run pug",
+    "src/*.css # # reloadcss"
+  ],
+  "open": false
+}

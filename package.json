@@ -1,0 +1,20 @@
+{
+  "name": "grid-pluralsight",
+  "version": "1.0.0",
+  "description": "CSS Grid Pluralsight course",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "pug": "pug src",
+    "dev": "light-server -c light-server-config.json"
+  },
+  "keywords": [],
+  "author": "Leo Nistor",
+  "license": "MIT",
+  "dependencies": {
+    "bonsai.css": "^1.0.1",
+    "light-server": "^2.7.0",
+    "pug-cli": "^1.0.0-alpha6"
+  }
+}
