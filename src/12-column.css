@@ -118,6 +118,32 @@ body {
   margin: 1em;
 }
 
+/* responsive layout */
+
+@media screen and (min-width: 475px) {
+  body {
+    grid: auto-flow min-content / 2fr 1fr;
+    grid-template-areas:
+      "header header"
+      "aside  nav   "
+      "main   main  "
+      "pies   pies  "
+      "footer footer";
+  }
+}
+
+@media screen and (min-width: 650px) {
+  body {
+    grid: auto-flow min-content / 1fr 2fr;
+    grid-template-areas:
+      "header header"
+      "aside  main   "
+      "nav    main  "
+      "pies   pies  "
+      "footer footer";
+  }
+}
+
 header {
   grid-area: header;
 }
@@ -149,4 +175,22 @@ footer {
   grid-column: span 12;
 }
 
-/* responsive */
+/* responsive pies */
+
+@media screen and (min-width: 360px) {
+  .pies img {
+    grid-column: span 6;
+  }
+}
+
+@media screen and (min-width: 550px) {
+  .pies img {
+    grid-column: span 4;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  .pies img {
+    grid-column: span 3;
+  }
+}
